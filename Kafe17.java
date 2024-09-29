@@ -37,7 +37,9 @@ public class Kafe17 {
                 break;
             case 'L':
                 totalHarga += 0.4 * totalHarga;
-                break;    
+                break; 
+                default:
+                System.out.println("The selection cup " + ukuranCup + " is not available." );
         }
         diskon = keanggotaan ? 0.1 : 0;
         nominalBayar = totalHarga - (diskon * totalHarga);
